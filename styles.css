@@ -19,24 +19,32 @@
   padding: 0;
 }
 
+html,
+body {
+  height: auto;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(30, 54%, 90%);
   font-family: "Outfit";
-  height: 100%;
+}
+
+main {
+  margin: 3%;
 }
 
 article {
   padding: 30px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
-  width: min-content;
+  max-width: 650px;
 }
 
 img {
-  width: 610px;
+  width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
@@ -54,7 +62,6 @@ h2 {
 }
 
 #about_recipe {
-  font-size: 15px;
   color: hsl(30, 10%, 34%);
   margin-bottom: 20px;
 }
@@ -119,7 +126,7 @@ h2 {
   margin-left: 5px;
 }
 
-#instructinos ol {
+#instructions ol {
   counter-reset: list-item-counter;
 }
 
@@ -172,6 +179,9 @@ tr td:nth-child(2) {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
 }
+table tr:nth-child(4) {
+  border-bottom: none;
+}
 hr {
   height: 1px;
   border: none;
@@ -180,9 +190,12 @@ hr {
 }
 
 @media (max-width: 500px) {
+  main {
+    margin: 0;
+  }
   article {
     width: 100%;
-    padding: 0;
+    padding: 0 0 30px 0;
     border-radius: 0px;
   }
   section,
