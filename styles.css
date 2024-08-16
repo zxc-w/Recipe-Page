@@ -19,17 +19,13 @@
   padding: 0;
 }
 
-html,
-body {
-  height: auto;
-}
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(30, 54%, 90%);
   font-family: "Outfit";
+  min-height: 100vh;
 }
 
 main {
